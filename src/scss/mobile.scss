@@ -1,0 +1,69 @@
+@use "colors" as *;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  background: url("../images/bg-mobile.svg") no-repeat top left, $Violet;
+}
+
+.logo {
+  margin: 2em 0;
+  width: 45%;
+}
+
+.hero {
+  .hero-img {
+    margin: 2em auto;
+  }
+  .hero-info {
+    text-align: center;
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+    }
+    p {
+      margin: 1em auto;
+      line-height: 1.5;
+    }
+    a {
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      background: white;
+      border-radius: 100px;
+      padding: 0.8em 5em;
+      margin-bottom: 3em;
+      color: $Violet;
+      box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.1);
+      &:hover {
+        background: $Soft-Magenta;
+        color: white;
+      }
+    }
+  }
+}
+
+.social {
+  padding: 1.5em 0;
+  text-align: center;
+  & > *:first-child {
+    border-radius: 50%;
+    padding: 5px 8px;
+  }
+  i {
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    &:hover {
+      color: $Soft-Magenta;
+      border: 1px solid $Soft-Magenta;
+    }
+  }
+  i + i {
+    margin-left: 0.5em;
+  }
+}
