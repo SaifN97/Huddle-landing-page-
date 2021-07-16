@@ -11,6 +11,7 @@ body {
 .logo {
   margin: 2em 0;
   width: 45%;
+  max-width: 180px;
 }
 
 .hero {
@@ -33,10 +34,10 @@ body {
       text-decoration: none;
       background: white;
       border-radius: 100px;
-      padding: 0.8em 5em;
+      padding: 0.8em 4em;
       margin-bottom: 3em;
       color: $Violet;
-      box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.1);
+      box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);
       &:hover {
         background: $Soft-Magenta;
         color: white;

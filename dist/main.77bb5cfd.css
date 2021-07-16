@@ -27,6 +27,7 @@ body {
 .logo {
   margin: 2em 0;
   width: 45%;
+  max-width: 180px;
 }
 
 .hero .hero-img {
@@ -49,10 +50,10 @@ body {
   text-decoration: none;
   background: white;
   border-radius: 100px;
-  padding: 0.8em 5em;
+  padding: 0.8em 4em;
   margin-bottom: 3em;
   color: #674baf;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 .hero .hero-info a:hover {
   background: #e882e8;
@@ -80,6 +81,43 @@ body {
 }
 .social i + i {
   margin-left: 0.5em;
+}
+
+@media (min-width: 900px) {
+  body {
+    background: url("/bg-desktop.e5babfde.svg") no-repeat center left, #674baf;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .hero {
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero .hero-info {
+    text-align: left;
+    width: 39%;
+  }
+  .hero .hero-info h1 {
+    font-size: 2.5rem;
+  }
+  .hero .hero-info p {
+    font-size: 1.2rem;
+  }
+  .hero .hero-img {
+    width: 55%;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .social {
+    padding: 0.5em 3.5em;
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
